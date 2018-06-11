@@ -1,0 +1,81 @@
+html{
+	font-size: 18px;
+}
+body{
+	background: #282e3a;
+	font-family: tahoma;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+	
+}
+h1{
+	color: #fff;
+	text-align: center;
+	font-size: 30px;
+}
+.del-countdown{
+ width: 90%;
+}
+#clock,
+#units{
+	display: flex;
+	justify-content: space-between;
+}
+#clock span{
+	width: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	padding: 5px;
+	font-size: 2rem;
+	color: #fff;
+	margin-bottom: 25px;
+	margin-top: 25px;
+}
+#units span{
+	width: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1rem;
+}
+#clock span:nth-child(1){
+	background: #fa5559;
+
+}
+#clock span:nth-child(2){
+	background: #26c2b9;
+}
+#clock span:nth-child(3){
+	background: #f6bc58;
+}
+#clock span:nth-child(4){
+	background: #2dcb74;
+}
+span.turn{
+	animation: turn 1s ease forwards;
+}
+
+@keyframes turn{
+	 0%{transform:scale(1)} 
+	50%{transform:scale(1.05)}
+	100%{transform:scale(1.1)}
+}
+
+@media only screen and (min-width: 600px){
+	html{
+		font-size: 22px;
+	}
+}
+@media only screen and (min-width: 1000px){
+	h1{
+		font-size: 40px;
+	}
+	html{
+		font-size: 24px;
+	}
+}
